@@ -73,7 +73,8 @@ namespace AAD_WebAPI_Demo
             app.UseCors(builder =>
                 builder.WithOrigins(
                     "http://localhost:3000",
-                    "https://localhost:3000"));
+                    "https://localhost:3000")
+                .AllowAnyHeader());
 
             app.UseHttpsRedirection();
 
